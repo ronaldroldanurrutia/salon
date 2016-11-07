@@ -196,7 +196,7 @@ class Polygon {
             }
         }
 };
-class Rectangulo{
+class Rectangulo : public Polygon{
     private:
         Point points[4];
     public :
@@ -209,7 +209,7 @@ class Rectangulo{
             return (abs(points[0].getx(),points[2].getx())*abs(points[0].gety(),points[2].getx()));
         }
 };
-class Triangulo{
+class Triangulo : public Polygon{
     private:
         Point points[4];
     public:
